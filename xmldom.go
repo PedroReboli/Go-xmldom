@@ -83,7 +83,7 @@ func Parse(r io.Reader) (*Document, error) {
 		case xml.CharData:
 			// text node
 			if e != nil {
-				e.Text = string(bytes.TrimSpace(token))
+				e.Text = string(token)
 			}
 		case xml.ProcInst:
 			doc.ProcInst = stringifyProcInst(&token)

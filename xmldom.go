@@ -2,7 +2,6 @@
 package xmldom
 
 import (
-	"bytes"
 	"encoding/xml"
 	"io"
 	"os"

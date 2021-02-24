@@ -205,18 +205,6 @@ func (n *Node) FindByName(name string) []*Node {
 	return nodes
 }
 
-func (n *Node) Query(xpath string) []*Node {
-	return xpathQuery(n, xpath)
-}
-
-func (n *Node) QueryOne(xpath string) *Node {
-	return xpathQueryOne(n, xpath)
-}
-
-func (n *Node) QueryEach(xpath string, cb func(int, *Node)) {
-	xpathQueryEach(n, xpath, cb)
-}
-
 func (n *Node) XML() string {
 	buf := new(bytes.Buffer)
 	printXML(buf, n, 0, "", true)

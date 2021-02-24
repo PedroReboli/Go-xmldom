@@ -1,3 +1,1 @@
 package: github.com/PedroReboli/go-xmldom
-import:
-- package: github.com/antchfx/xpath

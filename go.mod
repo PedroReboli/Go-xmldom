@@ -1,3 +1,3 @@
-module github.com/PedroReboli/go-xmldom
+module github.com/PedroReboli/Go-xmldom
 
 go 1.15
